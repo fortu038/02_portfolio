@@ -10,17 +10,14 @@ header {
     justify-content: space-between;
 }
 
-header h1, nav {
+header h1, nav, li {
     padding: 20px;
 }
 
 header ul {
     list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 header a {
