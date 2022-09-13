@@ -11,6 +11,11 @@ header {
     justify-content: space-between;
 }
 
+header h1 {
+    color: grey;
+    background-color: #8ac4ff;
+}
+
 header h1, nav, li {
     padding: 20px;
 }
