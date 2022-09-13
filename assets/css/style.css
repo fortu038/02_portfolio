@@ -3,6 +3,7 @@
     font-family: "Times New Roman", serif;
 }
 
+/* Navbar and website name */
 header {
     background-color: grey;
     display: flex;
