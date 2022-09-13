@@ -24,3 +24,36 @@ header ul {
 header a {
     text-decoration: none;
 }
+
+/* Information sections */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body h2, h3, p {
+    padding: 20px;
+}
+
+body section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* outline: 1px solid red; */
+}
+
+body section ul {
+    list-style-type: none;
+    /* outline: 1px solid blue; */
+}
+
+body section a {
+    text-decoration: none;
+}
+
+
+/* Contact Me */
+section#contact_me ul {
+    display: flex;
+    flex-direction: row;
+}
