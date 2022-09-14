@@ -1,6 +1,9 @@
+/* How can I make font size properly scale? */
+
 * {
     color: #8ac4ff;
     font-family: "Times New Roman", serif;
+    /* font-size: 1vw; */
 }
 
 /* Navbar and website name */
@@ -30,6 +33,7 @@ header a {
     text-decoration: none;
 }
 
+/* How can I make section borders align? */
 /* Information sections */
 body {
     display: flex;
@@ -56,9 +60,69 @@ body section a {
     text-decoration: none;
 }
 
+/* Work */
+/* 
+How can I make the images layed out properly? I want the below sort of setup:
+-------------
+|           |
+|           |
+-------------
+|     |     |
+|     |     |
+-------------
+But I can't quite figure it out
+*/
+section#work img {
+    max-width: 50%;
+    height: auto;
+}
+
+section#work img:hover {
+    /* background-color: #8ac4ff5b; */
+    opacity: 0.5;
+}
+
+section#work ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#work ul li#prework_site {
+    flex-grow: 5;
+}
+
+section#work li#prework_site img {
+    max-width: 100%;
+    height: auto;
+}
+
+section#work ul {
+    border-left: 5px solid #8ac4ff;
+}
+
+/* How can I overlay text on images? */
+/* section#work h3 {
+
+} */
+
+section#work li#prework_site {
+    position: relative;
+}
+
+section#work li#prework_site h3 {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+}
+
 
 /* Contact Me */
 section#contact_me ul {
     display: flex;
     flex-direction: row;
+    border-left: 5px solid #8ac4ff;
+}
+
+section#about_me p {
+    border-left: 5px solid #8ac4ff;
 }
