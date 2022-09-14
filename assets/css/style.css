@@ -3,7 +3,41 @@
 * {
     color: #8ac4ff;
     font-family: "Times New Roman", serif;
-    /* font-size: 1vw; */
+    font-size: 16px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+a:hover {
+    opacity: 0.5;
 }
 
 /* Navbar and website name */
@@ -77,10 +111,9 @@ section#work img {
     height: auto;
 }
 
-section#work img:hover {
-    /* background-color: #8ac4ff5b; */
+/* section#work img:hover {
     opacity: 0.5;
-}
+} */
 
 section#work ul {
     display: flex;
@@ -101,20 +134,19 @@ section#work ul {
 }
 
 /* How can I overlay text on images? */
-/* section#work h3 {
-
-} */
-
-section#work li#prework_site {
+section#work li {
     position: relative;
 }
 
-section#work li#prework_site h3 {
+section#work li h3 {
     position: absolute;
     top: 10%;
-    bottom: 10%;
+    bottom: 50%;
 }
 
+/* section#work h3 {
+
+} */
 
 /* Contact Me */
 section#contact_me ul {
