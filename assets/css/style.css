@@ -7,37 +7,25 @@
 }
 
 h1 {
-    display: block;
     font-size: 2em;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
 }
 
 h2 {
-    display: block;
     font-size: 1.5em;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
 }
 
 h3 {
-    display: block;
     font-size: 1.17em;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
 }
 
 a:hover {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 /* Navbar and website name */
@@ -94,6 +82,18 @@ body section a {
     text-decoration: none;
 }
 
+/* About Me */
+section#about_me section#content_about_me {
+    border-left: 5px solid #8ac4ff;
+    /* outline: 1px solid red; */
+}
+
+section#about_me img {
+    max-width: 10%;
+    height: auto;
+}
+
+
 /* Work */
 /* 
 How can I make the images layed out properly? I want the below sort of setup:
@@ -106,10 +106,28 @@ How can I make the images layed out properly? I want the below sort of setup:
 -------------
 But I can't quite figure it out
 */
-section#work img {
-    max-width: 50%;
+
+section#work li#prework_site img {
+    max-width: 100%;
     height: auto;
+    /* outline: 1px solid red; */
 }
+
+section#work li#homework_one img {
+    max-width: 70%;
+    height: auto;
+    /* outline: 1px solid red; */
+}
+
+section#work li#linkedin img {
+    max-width: 40%;
+    height: auto;
+    /* outline: 1px solid red; */
+}
+
+/* section#work li#linkedin a, h3 {
+    outline: 1px solid red;
+} */
 
 /* section#work img:hover {
     opacity: 0.5;
@@ -117,16 +135,32 @@ section#work img {
 
 section#work ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-content: space-between;
+    /* align-content: center; */
+    /* outline: 1px solid red; */
 }
 
 section#work ul li#prework_site {
-    flex-grow: 5;
+    /* flex-grow: 5; */
+    order: 2;
+    /* align-self: flex-start; */
+    /* outline: 1px solid blue; */
 }
 
-section#work li#prework_site img {
-    max-width: 100%;
-    height: auto;
+section#work ul li#homework_one {
+    order: 1;
+    /* outline: 1px solid green; */
+    /* align-items: flex-end; */
+}
+
+section#work ul li#linkedin {
+    order: 1;
+    /* outline: 1px solid black; */
+    /* display: flex;
+    align-items: flex-end; */
 }
 
 section#work ul {
@@ -134,14 +168,14 @@ section#work ul {
 }
 
 /* How can I overlay text on images? */
-section#work li {
+/* Nevermind, the section#work li h3 part does what I want fine now. Just need to scale text now */
+/* section#work li {
     position: relative;
-}
+} */
 
 section#work li h3 {
-    position: absolute;
-    top: 10%;
-    bottom: 50%;
+    position: relative;
+    margin-top: -50px;
 }
 
 /* section#work h3 {
@@ -152,9 +186,5 @@ section#work li h3 {
 section#contact_me ul {
     display: flex;
     flex-direction: row;
-    border-left: 5px solid #8ac4ff;
-}
-
-section#about_me p {
     border-left: 5px solid #8ac4ff;
 }

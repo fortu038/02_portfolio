@@ -2,7 +2,7 @@
 
 ## Description
 
-This project was done in order to display and better learn more adavnced aspects of CSS, such
+This project was done in order to display knowledge of and apply more adavnced aspects of CSS, such
 as flexbox, psuedo-classes, and psuedo-elemnts. The website created acts as a portfolio for myself,
 containing sections about myself, examples of my work, my contact information, and my resume.
 
