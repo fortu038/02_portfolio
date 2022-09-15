@@ -1,5 +1,4 @@
-/* How can I make font size properly scale? */
-
+/* General / Global stylings */
 * {
     color: #8ac4ff;
     font-family: "Times New Roman", serif;
@@ -28,6 +27,7 @@ a:hover {
     opacity: 0.7;
 }
 
+
 /* Navbar and website name */
 header {
     background-color: grey;
@@ -55,7 +55,7 @@ header a {
     text-decoration: none;
 }
 
-/* How can I make section borders align? */
+
 /* Information sections */
 body {
     display: flex;
@@ -70,22 +70,20 @@ body section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* outline: 1px solid red; */
 }
 
 body section ul {
     list-style-type: none;
-    /* outline: 1px solid blue; */
 }
 
 body section a {
     text-decoration: none;
 }
 
+
 /* About Me */
 section#about_me section#content_about_me {
     border-left: 5px solid #8ac4ff;
-    /* outline: 1px solid red; */
 }
 
 section#about_me img {
@@ -95,96 +93,55 @@ section#about_me img {
 
 
 /* Work */
-/* 
-How can I make the images layed out properly? I want the below sort of setup:
--------------
-|           |
-|           |
--------------
-|     |     |
-|     |     |
--------------
-But I can't quite figure it out
-*/
-
-section#work li#prework_site img {
-    max-width: 100%;
-    height: auto;
-    /* outline: 1px solid red; */
-}
-
-section#work li#homework_one img {
-    max-width: 70%;
-    height: auto;
-    /* outline: 1px solid red; */
-}
-
-section#work li#linkedin img {
-    max-width: 40%;
-    height: auto;
-    /* outline: 1px solid red; */
-}
-
-/* section#work li#linkedin a, h3 {
-    outline: 1px solid red;
-} */
-
-/* section#work img:hover {
-    opacity: 0.5;
-} */
-
 section#work ul {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-content: space-between;
-    /* align-content: center; */
-    /* outline: 1px solid red; */
 }
 
 section#work ul li#prework_site {
-    /* flex-grow: 5; */
     order: 2;
-    /* align-self: flex-start; */
-    /* outline: 1px solid blue; */
 }
 
 section#work ul li#homework_one {
     order: 1;
-    /* outline: 1px solid green; */
-    /* align-items: flex-end; */
 }
 
 section#work ul li#linkedin {
     order: 1;
-    /* outline: 1px solid black; */
-    /* display: flex;
-    align-items: flex-end; */
 }
 
 section#work ul {
     border-left: 5px solid #8ac4ff;
 }
 
-/* How can I overlay text on images? */
-/* Nevermind, the section#work li h3 part does what I want fine now. Just need to scale text now */
-/* section#work li {
-    position: relative;
-} */
+section#work li#prework_site img {
+    max-width: 100%;
+    height: auto;
+}
+
+section#work li#homework_one img {
+    max-width: 70%;
+    height: auto;
+}
+
+section#work li#linkedin img {
+    max-width: 40%;
+    height: auto;
+}
 
 section#work li h3 {
     position: relative;
     margin-top: -50px;
 }
 
-/* section#work h3 {
-
-} */
 
 /* Contact Me */
 section#contact_me ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     border-left: 5px solid #8ac4ff;
 }
