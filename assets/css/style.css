@@ -105,7 +105,7 @@ section#work ul li#prework_site {
     order: 2;
 }
 
-section#work ul li#homework_one {
+section#work ul li#group_project_two {
     order: 1;
 }
 
@@ -122,7 +122,7 @@ section#work li#prework_site img {
     height: auto;
 }
 
-section#work li#homework_one img {
+section#work li#group_project_two img {
     max-width: 70%;
     height: auto;
 }
